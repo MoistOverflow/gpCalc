@@ -37,7 +37,9 @@ export default function App() {
 
   const grabPersistence = async () =>{
     const persistentData:any = await AsyncStorage.getItem('history')
-    setHistory(JSON.parse(persistentData))
+    if (persistentData){
+      setHistory(JSON.parse(persistentData))
+    }
   }
 
   useEffect(()=>{calcResale(cost,percent)},[cost,percent])
