@@ -80,16 +80,16 @@ export default function App() {
 
           </DataTable>
       </View>
-      <StatusBar style="auto" />
+      <StatusBar style="dark" />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 50,
+    paddingTop: 50,
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#80b',
     alignItems: 'flex-end',
     justifyContent: 'flex-start',
   },
@@ -118,6 +118,6 @@ const styles = StyleSheet.create({
     margin: 10,
     borderWidth: 1,
     padding: 10,
-    backgroundColor: '#eee'
+    backgroundColor: '#70a'
   }
 });
